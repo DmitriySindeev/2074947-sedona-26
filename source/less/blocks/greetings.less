@@ -8,25 +8,24 @@
   box-sizing: border-box;
   padding: 90px 0 85px;
 
-  &--catalog {
-    @media (min-width: @tablet-width) {
-      width: 768px;
-      padding: 77px 0 91px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 1200px;
-    }
-  }
-
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     padding: 77px 0 91px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
   }
+
+    &--catalog {
+
+    @media (min-width: @tablet-width) {
+      padding: 77px 0 91px;
+    }
+  }
+
 }
 
 .greetings__image {

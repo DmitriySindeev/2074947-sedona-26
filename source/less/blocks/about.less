@@ -1,15 +1,18 @@
 .about {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
   }
 }
 
@@ -21,8 +24,20 @@
   width: 282px;
   padding: 32px 0 16px;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 520px;
+    padding: 48px 0 56px;
+  }
+
   &--catalog {
     padding: 33px 0 42px;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      max-width: 458px;
+      padding: 47px 0 56px;
+    }
   }
 
   &--catalog-video {
@@ -33,10 +48,6 @@
     padding: 36px 0 28px;
   }
 
-  @media (min-width: @tablet-width) {
-    width: 520px;
-    padding: 48px 0 56px;
-  }
 }
 
 .about__title {
